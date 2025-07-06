@@ -1,0 +1,123 @@
+.navbar-nav .nav-link {
+  position: relative;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: color 0.3s ease;
+}
+
+/* Hover underline halus */
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 10%;
+  width: 0;
+  height: 2px;
+  background-color: #ffd2d2;
+  transition: width 0.3s ease-in-out
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 80%;
+}
+
+/* Active tab highlight */
+.navbar-nav .nav-link.active {
+  color: #ffb3b3;
+  font-weight: 600;
+}
+
+.hero-section {
+    width: 100%;
+    height: 108vh;
+    background: linear-gradient(to right, #f14c57, #f79ca4); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.carousel {
+    margin-top: 80px;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.carousel-img {
+    height: 500px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.custom-caption {
+    position: absolute;
+    bottom: 15%;
+    left: 8%;
+    text-align: left;
+    max-width: 450px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+
+.custom-caption h1 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.custom-caption p {
+    color: #f1f1f1;
+}
+
+.custom-caption .btn-danger {
+    background-color: #e60023;
+    border: none;
+}
+
+
+@media (max-width: 768px) {
+  .carousel-img {
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .custom-caption {
+    left: 5%;
+    bottom: 10%;
+    max-width: 90%;
+    margin-left: 0;
+    padding: 8px;
+    text-align: center;
+  }
+
+  .custom-caption h1 {
+    font-size: 1.2rem;
+  }
+
+  .custom-caption p {
+    font-size: 0.9rem;
+  }
+
+  .custom-caption .btn-danger {
+    font-size: 0.9rem;
+    padding: 6px 14px;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 12px;
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+}
+
+

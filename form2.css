@@ -1,0 +1,37 @@
+body {
+  background-color: #f4d9d0;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+
+.btn-sponsor {
+  background-color: #921a40;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+}
+
+.btn-sponsor:hover {
+  background-color: #c75b7a;
+}
+
+h2 {
+  text-align: center;
+  color: #921a40;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+#lainnyaInputWrapper {
+  display: none;
+}
+
+#lainnyaInputWrapper.show {
+  display: block;
+}

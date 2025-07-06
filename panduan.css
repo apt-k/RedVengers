@@ -1,0 +1,47 @@
+/* stle panduan */
+body {
+    background: linear-gradient(to bottom, #fff0f0, #ffe6e6);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #ffcaca;
+    color: #b30000;
+}
+
+.accordion-item {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 15px;
+    border: none;
+}
+
+.accordion-button {
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.container h2 {
+    font-size: 2rem;
+}
+
+.btn-secondary {
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 25px;
+}
+
+.custom-btn {
+  background-color: #c2185b; /* pink tua */
+  color: white;
+  border: none;
+}
+
+.custom-btn:hover {
+  background-color: #ad1457;
+}
